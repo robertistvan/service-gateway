@@ -5,6 +5,7 @@ server:
 eureka:
   instance:
     hostname: gateway
+    preferIpAddress: ${PREFER_IP:false}
   client:
     serviceUrl:
       defaultZone: http://${REGISTRY_HOST:registry}:${SERVICE_REGISTRY_PORT:8761}/eureka/
