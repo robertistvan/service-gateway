@@ -7,4 +7,4 @@ eureka:
     hostname: gateway
   client:
     serviceUrl:
-      defaultZone: http://registry:8761/eureka/
+      defaultZone: http://${REGISTRY_HOST:registry}:8761/eureka/
